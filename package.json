@@ -1,0 +1,1 @@
+{"dependencies":{"cors":"^2.8.5","express":"^4.19.2"},"description":"Chat server for the People's Secrets site. The AI key lives only in server environment variables, never in the site page.","main":"server.js","name":"peoples-secrets-ai-chat","scripts":{"start":"node server.js"},"version":"1.0.0"}

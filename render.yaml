@@ -1,0 +1,13 @@
+# Render free-tier deployment for server.js.
+# In the Render dashboard, create a Web Service from this folder, then set
+# these environment variables (never commit real values):
+#   AI_API_KEY   (your Gemini API key, from Google AI Studio)
+#   AI_API_URL   https://generativelanguage.googleapis.com/v1beta/openai/
+#   AI_MODEL     gemini-3.5-flash
+services:
+  - type: web
+    name: peoples-secrets-ai-chat
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    plan: free
